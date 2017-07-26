@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/detail_point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/detail_point" />
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/detail_line" />
+
+    <TextView
+        android:id="@+id/detail_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/detail_point"
+        android:text="19日" />
+
+    <TextView
+        android:id="@+id/detail_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/detail_point"
+        android:text="19日"
+        android:visibility="gone" />
+
+</RelativeLayout>

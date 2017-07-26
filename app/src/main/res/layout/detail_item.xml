@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/detail_line" />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/detail_image_bg"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/food" />
+
+    <TextView
+        android:id="@+id/detail_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/detail_image"
+        android:text="购物"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/detail_description_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_title_left"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/detail_image"
+        android:text="aaa"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/detail_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/detail_image"
+        android:text="购物"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/detail_description_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_title_right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/detail_image"
+        android:text="aaa"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
